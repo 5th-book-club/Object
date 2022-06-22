@@ -7,15 +7,64 @@
 
 import Foundation
 
-struct Invitation {
-    private let date: Date
+class Theater {
+    private var ticketSeller: TicketSeller
+    
+    init(ticketSeller: TicketSeller) {
+        self.ticketSeller = ticketSeller
+    }
+    
+    func host(for audience: Audience) {
+        ticketSeller.sellTo(audience: audience)
+    }
 }
 
-struct Ticket {
-    private let fee: Double
+class TicketSeller {
+    private let ticketOffice: TicketOffice
     
-    func getFee() -> Double {
-        return fee
+    init(ticketOffice: TicketOffice) {
+        self.ticketOffice = ticketOffice
+    }
+    
+    func sellTo(audience: Audience) {
+        ticketOffice.earnMoney(amount: audience.buy(ticket: ticketOffice.getTicket()))
+    }
+}
+
+class TicketOffice {
+    private var money: Double
+    private var tickets: [Ticket]
+    
+    init(amount: Double, ticket: Ticket...) {
+        self.money = amount
+        self.tickets = ticket
+    }
+    
+    func getTicket() -> Ticket {
+        return tickets.removeFirst()
+    }
+    
+    func earnMoney(amount: Double) {
+        self.money += amount
+    }
+}
+
+class Audience {
+    private let bag: Bag
+    
+    init(bag: Bag) {
+        self.bag = bag
+    }
+    
+    func buy(ticket: Ticket) -> Double {
+        if bag.hasInvitation() {
+            bag.obtain(ticket)
+            return 0
+        } else {
+            bag.obtain(ticket)
+            bag.payMoney(amount: ticket.getFee())
+            return ticket.getFee()
+        }
     }
 }
 
@@ -47,63 +96,14 @@ class Bag {
     }
 }
 
-struct Audience {
-    private let bag: Bag
-    
-    init(bag: Bag) {
-        self.bag = bag
-    }
-    
-    func buy(ticket: Ticket) -> Double {
-        if bag.hasInvitation() {
-            bag.obtain(ticket)
-            return 0
-        } else {
-            bag.obtain(ticket)
-            bag.payMoney(amount: ticket.getFee())
-            return ticket.getFee()
-        }
-    }
+struct Invitation {
+    private let date: Date
 }
 
-class TicketOffice {
-    private var money: Double
-    private var tickets: [Ticket]
+struct Ticket {
+    private let fee: Double
     
-    init(amount: Double, ticket: Ticket...) {
-        self.money = amount
-        self.tickets = ticket
-    }
-    
-    func getTicket() -> Ticket {
-        return tickets.removeFirst()
-    }
-    
-    func earnMoney(amount: Double) {
-        self.money += amount
-    }
-}
-
-class TicketSeller {
-    private let ticketOffice: TicketOffice
-    
-    init(ticketOffice: TicketOffice) {
-        self.ticketOffice = ticketOffice
-    }
-    
-    func sellTo(audience: Audience) {
-        ticketOffice.earnMoney(amount: audience.buy(ticket: ticketOffice.getTicket()))
-    }
-}
-
-class Theater {
-    private var ticketSeller: TicketSeller
-    
-    init(ticketSeller: TicketSeller) {
-        self.ticketSeller = ticketSeller
-    }
-    
-    func host(for audience: Audience) {
-        ticketSeller.sellTo(audience: audience)
+    func getFee() -> Double {
+        return fee
     }
 }
