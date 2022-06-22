@@ -8,7 +8,7 @@
 import Foundation
 
 struct Invitation {
-    private let when: Date
+    private let date: Date
 }
 
 struct Ticket {
@@ -20,7 +20,7 @@ struct Ticket {
 }
 
 class Bag {
-    private var amount: Double = 0.0
+    private var money: Double = 0.0
     private let invitation: Invitation?
     private var ticket: Ticket?
     
@@ -29,21 +29,21 @@ class Bag {
         self.ticket = ticket
     }
     
-    convenience init(amount: Double) {
+    convenience init(money: Double) {
         self.init(invitaion: nil, ticket: nil)
-        self.amount = amount
+        self.money = money
     }
     
     func hasInvitation() -> Bool {
         return invitation != nil
     }
     
-    func setTicket(ticket: Ticket) {
+    func obtain(_ ticket: Ticket) {
         self.ticket = ticket
     }
 
-    func minusAmount(amount: Double) {
-        self.amount -= amount
+    func payMoney(amount: Double) {
+        self.money -= amount
     }
 }
 
@@ -56,31 +56,31 @@ struct Audience {
     
     func buy(ticket: Ticket) -> Double {
         if bag.hasInvitation() {
-            bag.setTicket(ticket: ticket)
+            bag.obtain(ticket)
             return 0
         } else {
-            bag.setTicket(ticket: ticket)
-            bag.minusAmount(amount: ticket.getFee())
+            bag.obtain(ticket)
+            bag.payMoney(amount: ticket.getFee())
             return ticket.getFee()
         }
     }
 }
 
 class TicketOffice {
-    private var amount: Double
-    private var ticket: [Ticket]
+    private var money: Double
+    private var tickets: [Ticket]
     
     init(amount: Double, ticket: Ticket...) {
-        self.amount = amount
-        self.ticket = ticket
+        self.money = amount
+        self.tickets = ticket
     }
     
     func getTicket() -> Ticket {
-        return ticket.removeFirst()
+        return tickets.removeFirst()
     }
     
-    func plusAmount(amount: Double) {
-        self.amount += amount
+    func earnMoney(amount: Double) {
+        self.money += amount
     }
 }
 
@@ -92,7 +92,7 @@ class TicketSeller {
     }
     
     func sellTo(audience: Audience) {
-        ticketOffice.plusAmount(amount: audience.buy(ticket: ticketOffice.getTicket()))
+        ticketOffice.earnMoney(amount: audience.buy(ticket: ticketOffice.getTicket()))
     }
 }
 
@@ -103,7 +103,7 @@ class Theater {
         self.ticketSeller = ticketSeller
     }
     
-    func enter(audience: Audience) {
+    func host(for audience: Audience) {
         ticketSeller.sellTo(audience: audience)
     }
 }
