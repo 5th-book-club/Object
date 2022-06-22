@@ -8,9 +8,20 @@
 import Foundation
 
 class Audience {
-    private(set) var bag: Bag
+    private var bag: Bag
     
     init(bag: Bag) {
         self.bag = bag
+    }
+    
+    func buy(ticket: Ticket) -> Double {
+        if bag.hasInvitation {
+            bag.setTicket(ticket)
+            return .zero
+        } else {
+            bag.setTicket(ticket)
+            bag.minusAmount(ticket.fee)
+            return ticket.fee
+        }
     }
 }
