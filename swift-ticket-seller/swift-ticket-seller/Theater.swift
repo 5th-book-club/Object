@@ -11,6 +11,6 @@ struct Theater {
     private var ticketSeller: TicketSeller
     
     func enter(_ audience: Audience) {
-        ticketSeller.sellTo(audience: audience)
+        ticketSeller.sellTo(audience)
     }
 }

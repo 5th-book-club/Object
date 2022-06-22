@@ -16,7 +16,11 @@ class TicketOffice {
         self.tickets = tickets
     }
     
-    func getTicket() -> Ticket {
+    func sellTicketTo(_ audience: Audience) {
+        plusAmount(audience.buy(ticket: getTicket()))
+    }
+    
+    private func getTicket() -> Ticket {
         return tickets.removeFirst()
     }
     
@@ -24,7 +28,7 @@ class TicketOffice {
         self.amount -= amount
     }
     
-    func plusAmount(_ amount: Double) {
+    private func plusAmount(_ amount: Double) {
         self.amount += amount
     }
 }
