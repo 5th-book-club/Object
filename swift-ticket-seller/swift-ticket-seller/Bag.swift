@@ -21,7 +21,7 @@ class Bag {
         self.invitation = invitation
     }
     
-    lazy var hasInvitation: Bool = {
+    private lazy var hasInvitation: Bool = {
         return self.invitation != nil
     }()
     
@@ -29,11 +29,22 @@ class Bag {
         return self.ticket != nil
     }()
     
-    func setTicket(_ ticket: Ticket) {
+    func hold(ticket: Ticket) -> Double {
+        if hasInvitation {
+            setTicket(ticket)
+            return .zero
+        } else {
+            setTicket(ticket)
+            minusAmount(ticket.fee)
+            return ticket.fee
+        }
+    }
+    
+    private func setTicket(_ ticket: Ticket) {
         self.ticket = ticket
     }
     
-    func minusAmount(_ amount: Double) {
+    private func minusAmount(_ amount: Double) {
         self.amount -= amount
     }
     
