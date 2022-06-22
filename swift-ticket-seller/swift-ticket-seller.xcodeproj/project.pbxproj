@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4EBF1C1428630DDE00C35698 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1C1328630DDE00C35698 /* main.swift */; };
+		4EBF1C1B28630EB900C35698 /* Invitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1C1A28630EB900C35698 /* Invitation.swift */; };
+		4EBF1C1D28630F0800C35698 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1C1C28630F0800C35698 /* Ticket.swift */; };
+		4EBF1C1F28630F3A00C35698 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1C1E28630F3A00C35698 /* Bag.swift */; };
+		4EBF1C212863102B00C35698 /* Audience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1C202863102B00C35698 /* Audience.swift */; };
+		4EBF1C232863106500C35698 /* TicketOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1C222863106500C35698 /* TicketOffice.swift */; };
+		4EBF1C252863112000C35698 /* TicketSeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1C242863112000C35698 /* TicketSeller.swift */; };
+		4EBF1C272863115A00C35698 /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBF1C262863115A00C35698 /* Theater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,13 @@
 /* Begin PBXFileReference section */
 		4EBF1C1028630DDE00C35698 /* swift-ticket-seller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-ticket-seller"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBF1C1328630DDE00C35698 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4EBF1C1A28630EB900C35698 /* Invitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invitation.swift; sourceTree = "<group>"; };
+		4EBF1C1C28630F0800C35698 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		4EBF1C1E28630F3A00C35698 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		4EBF1C202863102B00C35698 /* Audience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audience.swift; sourceTree = "<group>"; };
+		4EBF1C222863106500C35698 /* TicketOffice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketOffice.swift; sourceTree = "<group>"; };
+		4EBF1C242863112000C35698 /* TicketSeller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSeller.swift; sourceTree = "<group>"; };
+		4EBF1C262863115A00C35698 /* Theater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				4EBF1C1328630DDE00C35698 /* main.swift */,
+				4EBF1C1A28630EB900C35698 /* Invitation.swift */,
+				4EBF1C1C28630F0800C35698 /* Ticket.swift */,
+				4EBF1C1E28630F3A00C35698 /* Bag.swift */,
+				4EBF1C202863102B00C35698 /* Audience.swift */,
+				4EBF1C222863106500C35698 /* TicketOffice.swift */,
+				4EBF1C242863112000C35698 /* TicketSeller.swift */,
+				4EBF1C262863115A00C35698 /* Theater.swift */,
 			);
 			path = "swift-ticket-seller";
 			sourceTree = "<group>";
@@ -120,7 +141,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EBF1C1B28630EB900C35698 /* Invitation.swift in Sources */,
+				4EBF1C1D28630F0800C35698 /* Ticket.swift in Sources */,
+				4EBF1C212863102B00C35698 /* Audience.swift in Sources */,
+				4EBF1C1F28630F3A00C35698 /* Bag.swift in Sources */,
 				4EBF1C1428630DDE00C35698 /* main.swift in Sources */,
+				4EBF1C272863115A00C35698 /* Theater.swift in Sources */,
+				4EBF1C232863106500C35698 /* TicketOffice.swift in Sources */,
+				4EBF1C252863112000C35698 /* TicketSeller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
