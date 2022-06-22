@@ -57,14 +57,7 @@ class Audience {
     }
     
     func buy(ticket: Ticket) -> Double {
-        if bag.hasInvitation() {
-            bag.obtain(ticket)
-            return 0
-        } else {
-            bag.obtain(ticket)
-            bag.payMoney(amount: ticket.getFee())
-            return ticket.getFee()
-        }
+        return bag.obtain(ticket)
     }
 }
 
@@ -83,15 +76,26 @@ class Bag {
         self.money = money
     }
     
-    func hasInvitation() -> Bool {
+    func obtain(_ ticket: Ticket) -> Double {
+        if hasInvitation() {
+            set(ticket)
+            return 0
+        } else {
+            set(ticket)
+            payMoney(amount: ticket.getFee())
+            return ticket.getFee()
+        }
+    }
+    
+    private func hasInvitation() -> Bool {
         return invitation != nil
     }
     
-    func obtain(_ ticket: Ticket) {
+    private func set(_ ticket: Ticket) {
         self.ticket = ticket
     }
 
-    func payMoney(amount: Double) {
+    private func payMoney(amount: Double) {
         self.money -= amount
     }
 }
