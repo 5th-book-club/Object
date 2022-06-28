@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4ED43D64286B17B3008CB017 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D63286B17B3008CB017 /* main.swift */; };
+		4ED43D6B286B1805008CB017 /* Screening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D6A286B1805008CB017 /* Screening.swift */; };
+		4ED43D6D286B571D008CB017 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D6C286B571D008CB017 /* Movie.swift */; };
+		4ED43D6F286B588B008CB017 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D6E286B588B008CB017 /* Money.swift */; };
+		4ED43D71286B5C05008CB017 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D70286B5C05008CB017 /* Reservation.swift */; };
+		4ED43D73286B5D2A008CB017 /* DiscountPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D72286B5D2A008CB017 /* DiscountPolicy.swift */; };
+		4ED43D75286B5E48008CB017 /* DiscountCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D74286B5E48008CB017 /* DiscountCondition.swift */; };
+		4ED43D77286B62D9008CB017 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D76286B62D9008CB017 /* DayOfWeek.swift */; };
+		4ED43D79286B6456008CB017 /* LocalTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D78286B6456008CB017 /* LocalTime.swift */; };
+		4ED43D7B286B6BF2008CB017 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED43D7A286B6BF2008CB017 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,15 @@
 /* Begin PBXFileReference section */
 		4ED43D60286B17B3008CB017 /* swift-movie-reservation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-movie-reservation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ED43D63286B17B3008CB017 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4ED43D6A286B1805008CB017 /* Screening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screening.swift; sourceTree = "<group>"; };
+		4ED43D6C286B571D008CB017 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		4ED43D6E286B588B008CB017 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		4ED43D70286B5C05008CB017 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		4ED43D72286B5D2A008CB017 /* DiscountPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountPolicy.swift; sourceTree = "<group>"; };
+		4ED43D74286B5E48008CB017 /* DiscountCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCondition.swift; sourceTree = "<group>"; };
+		4ED43D76286B62D9008CB017 /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
+		4ED43D78286B6456008CB017 /* LocalTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTime.swift; sourceTree = "<group>"; };
+		4ED43D7A286B6BF2008CB017 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,15 @@
 			isa = PBXGroup;
 			children = (
 				4ED43D63286B17B3008CB017 /* main.swift */,
+				4ED43D6A286B1805008CB017 /* Screening.swift */,
+				4ED43D6C286B571D008CB017 /* Movie.swift */,
+				4ED43D6E286B588B008CB017 /* Money.swift */,
+				4ED43D70286B5C05008CB017 /* Reservation.swift */,
+				4ED43D72286B5D2A008CB017 /* DiscountPolicy.swift */,
+				4ED43D74286B5E48008CB017 /* DiscountCondition.swift */,
+				4ED43D76286B62D9008CB017 /* DayOfWeek.swift */,
+				4ED43D78286B6456008CB017 /* LocalTime.swift */,
+				4ED43D7A286B6BF2008CB017 /* Customer.swift */,
 			);
 			path = "swift-movie-reservation";
 			sourceTree = "<group>";
@@ -120,7 +147,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ED43D6B286B1805008CB017 /* Screening.swift in Sources */,
+				4ED43D7B286B6BF2008CB017 /* Customer.swift in Sources */,
+				4ED43D77286B62D9008CB017 /* DayOfWeek.swift in Sources */,
 				4ED43D64286B17B3008CB017 /* main.swift in Sources */,
+				4ED43D73286B5D2A008CB017 /* DiscountPolicy.swift in Sources */,
+				4ED43D75286B5E48008CB017 /* DiscountCondition.swift in Sources */,
+				4ED43D71286B5C05008CB017 /* Reservation.swift in Sources */,
+				4ED43D6F286B588B008CB017 /* Money.swift in Sources */,
+				4ED43D6D286B571D008CB017 /* Movie.swift in Sources */,
+				4ED43D79286B6456008CB017 /* LocalTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
