@@ -8,7 +8,7 @@
 class DiscountPolicy {
     private var conditions: [DiscountCondition] = []
     
-    init(conditions: [DiscountCondition]) {
+    init(conditions: [DiscountCondition] = []) {
         self.conditions = conditions
     }
     

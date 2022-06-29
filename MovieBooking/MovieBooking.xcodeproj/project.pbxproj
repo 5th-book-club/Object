@@ -19,6 +19,7 @@
 		0E820059286B617F0018CC60 /* AmountDiscountPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E820058286B617F0018CC60 /* AmountDiscountPolicy.swift */; };
 		0E82005B286B65160018CC60 /* PercentDiscountPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82005A286B65160018CC60 /* PercentDiscountPolicy.swift */; };
 		0E82005D286BC8FE0018CC60 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82005C286BC8FE0018CC60 /* Customer.swift */; };
+		0E82005F286CBABE0018CC60 /* NoneDiscountPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82005E286CBABE0018CC60 /* NoneDiscountPolicy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		0E820058286B617F0018CC60 /* AmountDiscountPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountDiscountPolicy.swift; sourceTree = "<group>"; };
 		0E82005A286B65160018CC60 /* PercentDiscountPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentDiscountPolicy.swift; sourceTree = "<group>"; };
 		0E82005C286BC8FE0018CC60 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		0E82005E286CBABE0018CC60 /* NoneDiscountPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneDiscountPolicy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				0E820041286B549D0018CC60 /* main.swift */,
 				0E820048286B55B20018CC60 /* Screening.swift */,
 				0E82004A286B573C0018CC60 /* Money.swift */,
+				0E82005E286CBABE0018CC60 /* NoneDiscountPolicy.swift */,
 				0E82004C286B5B810018CC60 /* Reservation.swift */,
 				0E82004E286B5C590018CC60 /* Movie.swift */,
 				0E820050286B5D570018CC60 /* DiscountPolicy.swift */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E820059286B617F0018CC60 /* AmountDiscountPolicy.swift in Sources */,
+				0E82005F286CBABE0018CC60 /* NoneDiscountPolicy.swift in Sources */,
 				0E82004B286B573C0018CC60 /* Money.swift in Sources */,
 				0E820049286B55B20018CC60 /* Screening.swift in Sources */,
 				0E82005D286BC8FE0018CC60 /* Customer.swift in Sources */,

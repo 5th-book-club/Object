@@ -7,7 +7,7 @@
 
 import Foundation
 
-var avatar = Movie(title: "아바타",
+let avatar = Movie(title: "아바타",
                    runningTime: 120,
                    fee: Money.wons(amount: 10_000),
                    
@@ -26,7 +26,7 @@ var avatar = Movie(title: "아바타",
                     ]
                    ))
 
-var titanic = Movie(title: "타이타닉",
+let titanic = Movie(title: "타이타닉",
                     runningTime: 180,
                     fee: Money.wons(amount: 11_000),
                     discountPolicy: PercentDiscountPolicy(
@@ -48,3 +48,8 @@ var titanic = Movie(title: "타이타닉",
                                     hour: 13, minute: 59))
                         ]
                     ))
+
+let starWars = Movie(title: "스타워즈",
+                     runningTime: 210,
+                     fee: Money.wons(amount: 10_000),
+                     discountPolicy: NoneDiscountPolicy())
