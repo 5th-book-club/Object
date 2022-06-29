@@ -27,4 +27,8 @@ class Movie {
     func calculateMovieFee(screening: Screening) -> Money {
         return fee.minus(amount: discountPolicy.calculateDiscountAmount(screening: screening))
     }
+    
+    func changeDiscountPolicy(discountPolicy: DiscountPolicy) {
+        self.discountPolicy = discountPolicy
+    }
 }
