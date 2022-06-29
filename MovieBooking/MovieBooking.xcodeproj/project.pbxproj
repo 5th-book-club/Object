@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0E820042286B549D0018CC60 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E820041286B549D0018CC60 /* main.swift */; };
+		0E820049286B55B20018CC60 /* Screening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E820048286B55B20018CC60 /* Screening.swift */; };
+		0E82004B286B573C0018CC60 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82004A286B573C0018CC60 /* Money.swift */; };
+		0E82004D286B5B810018CC60 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82004C286B5B810018CC60 /* Reservation.swift */; };
+		0E82004F286B5C590018CC60 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82004E286B5C590018CC60 /* Movie.swift */; };
+		0E820051286B5D570018CC60 /* DiscountPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E820050286B5D570018CC60 /* DiscountPolicy.swift */; };
+		0E820053286B5ED90018CC60 /* DiscountCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E820052286B5ED90018CC60 /* DiscountCondition.swift */; };
+		0E820055286B5F250018CC60 /* SequenceCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E820054286B5F250018CC60 /* SequenceCondition.swift */; };
+		0E820057286B5FA40018CC60 /* PeriodCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E820056286B5FA40018CC60 /* PeriodCondition.swift */; };
+		0E820059286B617F0018CC60 /* AmountDiscountPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E820058286B617F0018CC60 /* AmountDiscountPolicy.swift */; };
+		0E82005B286B65160018CC60 /* PercentDiscountPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82005A286B65160018CC60 /* PercentDiscountPolicy.swift */; };
+		0E82005D286BC8FE0018CC60 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82005C286BC8FE0018CC60 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +36,17 @@
 /* Begin PBXFileReference section */
 		0E82003E286B549D0018CC60 /* MovieBooking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MovieBooking; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E820041286B549D0018CC60 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0E820048286B55B20018CC60 /* Screening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screening.swift; sourceTree = "<group>"; };
+		0E82004A286B573C0018CC60 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		0E82004C286B5B810018CC60 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		0E82004E286B5C590018CC60 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0E820050286B5D570018CC60 /* DiscountPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountPolicy.swift; sourceTree = "<group>"; };
+		0E820052286B5ED90018CC60 /* DiscountCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCondition.swift; sourceTree = "<group>"; };
+		0E820054286B5F250018CC60 /* SequenceCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceCondition.swift; sourceTree = "<group>"; };
+		0E820056286B5FA40018CC60 /* PeriodCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCondition.swift; sourceTree = "<group>"; };
+		0E820058286B617F0018CC60 /* AmountDiscountPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountDiscountPolicy.swift; sourceTree = "<group>"; };
+		0E82005A286B65160018CC60 /* PercentDiscountPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentDiscountPolicy.swift; sourceTree = "<group>"; };
+		0E82005C286BC8FE0018CC60 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,17 @@
 			isa = PBXGroup;
 			children = (
 				0E820041286B549D0018CC60 /* main.swift */,
+				0E820048286B55B20018CC60 /* Screening.swift */,
+				0E82004A286B573C0018CC60 /* Money.swift */,
+				0E82004C286B5B810018CC60 /* Reservation.swift */,
+				0E82004E286B5C590018CC60 /* Movie.swift */,
+				0E820050286B5D570018CC60 /* DiscountPolicy.swift */,
+				0E820052286B5ED90018CC60 /* DiscountCondition.swift */,
+				0E820054286B5F250018CC60 /* SequenceCondition.swift */,
+				0E820056286B5FA40018CC60 /* PeriodCondition.swift */,
+				0E820058286B617F0018CC60 /* AmountDiscountPolicy.swift */,
+				0E82005A286B65160018CC60 /* PercentDiscountPolicy.swift */,
+				0E82005C286BC8FE0018CC60 /* Customer.swift */,
 			);
 			path = MovieBooking;
 			sourceTree = "<group>";
@@ -120,7 +153,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E820059286B617F0018CC60 /* AmountDiscountPolicy.swift in Sources */,
+				0E82004B286B573C0018CC60 /* Money.swift in Sources */,
+				0E820049286B55B20018CC60 /* Screening.swift in Sources */,
+				0E82005D286BC8FE0018CC60 /* Customer.swift in Sources */,
+				0E820057286B5FA40018CC60 /* PeriodCondition.swift in Sources */,
+				0E820055286B5F250018CC60 /* SequenceCondition.swift in Sources */,
+				0E82005B286B65160018CC60 /* PercentDiscountPolicy.swift in Sources */,
+				0E820051286B5D570018CC60 /* DiscountPolicy.swift in Sources */,
+				0E820053286B5ED90018CC60 /* DiscountCondition.swift in Sources */,
+				0E82004D286B5B810018CC60 /* Reservation.swift in Sources */,
 				0E820042286B549D0018CC60 /* main.swift in Sources */,
+				0E82004F286B5C590018CC60 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
