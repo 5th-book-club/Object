@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias LocalDateTime = Date
+typealias LocalDateTime = DateComponents
 
 class Screening {
     private var movie: Movie
